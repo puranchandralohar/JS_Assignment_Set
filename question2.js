@@ -2,10 +2,21 @@
 //(Including a,b)
 let a = parseInt(process.argv[2]);
 let b = parseInt(process.argv[3]);
+// let sum = 0;
+// for(let i=a;i<=b;i++){
+//     if(i%2==0){
+//         sum= sum+i;
+//     }
+// }
+// console.log(sum);
+
+// While loop
 let sum = 0;
-for(let i=a;i<=b;i++){
-    if(i%2==0){
-        sum= sum+i;
-    }
+let i = a;
+while (i <= b) {
+  if (i % 2 == 0) {
+    sum = sum + i;
+  }
+  i++;
 }
 console.log(sum);
